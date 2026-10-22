@@ -88,10 +88,22 @@
   dd { margin: 0; font-family: var(--kr); }
 
   /* ---------- Contact ---------- */
-  #contact dl { grid-template-columns: 40px 1fr; max-width: 640px; margin-top: 20px; border: 0; padding: 0; }
+  #contact dl { grid-template-columns: 50px 1fr; max-width: 640px; margin-top: 20px; border: 0; padding: 0; }
   .name { margin: 0; font-family: var(--kr); font-weight: 300; font-size: 1.05rem; }
   .name span { margin-left: 14px; color: var(--mute); font-size: .85rem; }
   .copy { margin: clamp(56px, 8vw, 110px) 0 0; padding: 22px 0 calc(28px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); color: var(--mute); font-weight: 300; font-size: .72rem; letter-spacing: .28em; }
+
+  /* ---------- Technology / Innovation ---------- */
+  #technology { max-width: 1500px; margin: 0 auto; padding: clamp(60px, 9vw, 120px) var(--pad); scroll-snap-align: start; min-height: 80svh; display: flex; flex-direction: column; justify-content: center; }
+  .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(20px, 3vw, 32px); margin-top: 36px; }
+  .tech-card { background: rgba(255,255,253,.025); border: 1px solid var(--line); padding: clamp(28px, 3.6vw, 42px); display: flex; flex-direction: column; justify-content: space-between; transition: all .4s ease; border-radius: 2px; }
+  .tech-card:hover { border-color: rgba(255,255,253,.45); background: rgba(255,255,253,.05); transform: translateY(-4px); }
+  .tech-num { font-size: .78rem; color: var(--mute); letter-spacing: .3em; font-family: var(--sans); margin-bottom: 14px; }
+  .tech-title { font-family: var(--kr); font-weight: 300; font-size: clamp(1.15rem, 1.7vw, 1.4rem); letter-spacing: .02em; margin: 0 0 8px; color: var(--ink); line-height: 1.45; word-break: keep-all; }
+  .tech-sub { font-family: var(--sans); font-size: .75rem; color: var(--mute); letter-spacing: .15em; text-transform: uppercase; margin-bottom: 16px; }
+  .tech-desc { font-family: var(--kr); font-weight: 300; font-size: .92rem; line-height: 1.85; color: #c9c7c0; word-break: keep-all; margin: 0; }
+  .tech-tags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tech-tag { display: inline-block; padding: 4px 10px; border: 1px solid rgba(255,255,253,.15); font-size: .72rem; color: var(--mute); letter-spacing: .08em; font-family: var(--sans); }
 
   @media (max-width: 700px) {
     .grid { grid-template-columns: 1fr; }
@@ -107,7 +119,7 @@
   <div class="hero" id="hero">
     <header>
       <a class="mark" href="#hero" aria-label="D2H 홈">D2H</a>
-      <nav aria-label="주요 메뉴"><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="주요 메뉴"><a href="#projects">Projects</a><a href="#technology">Technology</a><a href="#contact">Contact</a></nav>
     </header>
     <main>
       <h1>D2H</h1>
@@ -130,16 +142,74 @@
     <div id="grid"></div>
   </section>
 
+  <section id="technology">
+    <h2 class="sec">Innovation &amp; Technology</h2>
+    <p style="font-family: var(--kr); font-weight: 300; color: #d9d7d0; font-size: clamp(1.05rem, 1.8vw, 1.35rem); line-height: 1.85; max-width: 48em; margin: 0 0 16px; word-break: keep-all;">
+      D2H???꾪넻 嫄댁텞 ?ㅺ퀎???쒓퀎瑜??섏뼱, ?멸났吏??AI)怨??ㅽ뵂?뚯뒪 臾쇰━ ?쒕??덉씠???붿쭊???듯빀?섏뿬 ?ㅺ퀎???뺣??깃낵 移쒗솚寃??깅뒫, 李쎌쓽???먯깋???띾룄瑜??곸떊?섎뒗 李⑥꽭? 嫄댁텞 湲곗닠(AEC Tech)???곌뎄쨌媛쒕컻?⑸땲??
+    </p>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div>
+          <div class="tech-num">01 / REGULATORY AI</div>
+          <h3 class="tech-title">AI 湲곕컲 嫄댁텞 踰뺢퇋 諛??명뿀媛 ?먮룞 ?ъ쟾 寃??/h3>
+          <div class="tech-sub">AI-Driven Regulatory Compliance</div>
+          <p class="tech-desc">
+            嫄댁텞踰? 援?넗怨꾪쉷踰?諛??꾧뎅 吏?먯껜 議곕???諛⑸???洹쒖젣 ?곗씠?곕? ?洹쒕え ?몄뼱 紐⑤뜽(LLM)怨?RAG ?뚯씠?꾨씪?몄쑝濡?援ъ“?뷀빀?덈떎. 湲고쉷 珥덇린 ?④퀎遺???꾩?蹂??명뿀媛 由ъ뒪?ъ? 踰뺤쟻 ?쒓퀎?좎쓣 ?좎냽?섍퀬 ?뺣??섍쾶 ?꾩텧?섏뿬 ?섏궗寃곗젙 湲곌컙???띻린?곸쑝濡??⑥텞?⑸땲??
+          </p>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">LLM / RAG</span>
+          <span class="tech-tag">Building Code AI</span>
+          <span class="tech-tag">Permit Analysis</span>
+        </div>
+      </div>
+
+      <div class="tech-card">
+        <div>
+          <div class="tech-num">02 / ENVIRONMENTAL SIMULATION</div>
+          <h3 class="tech-title">?ㅽ뵂?뚯뒪 臾쇰━?붿쭊 ?곌퀎 移쒗솚寃승룹뿉?덉? 遺꾩꽍</h3>
+          <div class="tech-sub">EnergyPlus &amp; FluxDL Simulation</div>
+          <p class="tech-desc">
+            誘멸뎅 ?먮꼫吏遺(DOE)??寃利앸맂 ?먮꼫吏 ?댁꽍 ?붿쭊??<strong>EnergyPlus</strong>? ?쇱“쨌?쇱궗쨌梨꾧킅 ?쒕??덉씠???붿쭊 <strong>FluxDL</strong>??AI ?뚰겕?뚮줈?곗뿉 吏곸젒 ?듯빀?⑸땲?? ?ㅺ퀎 珥덇린 留ㅼ뒪 ?④퀎遺???꾩냼 諛곗텧怨??먮꼫吏 ?뚮퉬瑜??덉륫?섏뿬 吏꾩젙???쒕줈?먮꼫吏 吏?띻???嫄댁텞???ㅽ쁽?⑸땲??
+          </p>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">EnergyPlus</span>
+          <span class="tech-tag">FluxDL</span>
+          <span class="tech-tag">Net-Zero Design</span>
+        </div>
+      </div>
+
+      <div class="tech-card">
+        <div>
+          <div class="tech-num">03 / GENERATIVE IDEATION</div>
+          <h3 class="tech-title">?먯뒪耳移샕룸떎?댁뼱洹몃옩???앹꽦??AI 諛쒖쟾 諛??⑤꼸 ?먮룞??/h3>
+          <div class="tech-sub">Sketch-to-Presentation Pipeline</div>
+          <p class="tech-desc">
+            嫄댁텞媛??吏곴??곸씤 珥덇린 ?먯뒪耳移섏? 怨듦컙 ?ㅼ씠?닿렇?⑥쓣 硫?곕え???앹꽦??AI瑜??듯빐 援ъ껜?곸씤 3D 怨듦컙 紐⑤뜽怨??쒓컖?붾줈 諛쒖쟾?쒗궢?덈떎. ?ㅽ뵂?뚯뒪 洹몃옒???붿쭊 諛??덉씠?꾩썐 ?뚯씠?꾨씪?몄쓣 ?곌퀎?섏뿬 ?ㅺ퀎 寃?좎? ?꾨젅?좏뀒?댁뀡 ?⑤꼸 援ъ꽦源뚯? ?좉린?곸쑝濡??먮룞?뷀빀?덈떎.
+          </p>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Multimodal AI</span>
+          <span class="tech-tag">Spatial Diagram</span>
+          <span class="tech-tag">Auto Panel Layout</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <h2 class="sec">Contact</h2>
-    <p class="name">신동현<span>건축사 · 대표</span></p>
+    <p class="name">二쇱떇?뚯궗 ?뷀닾?먯씠移섏쥌?⑷굔異뺤궗?щТ??/p>
+    <p style="margin: 6px 0 24px; color: var(--mute); font-family: var(--kr); font-weight: 300; font-size: 0.95rem;">
+      ?좊룞??<span>??쒖씠??쨌 嫄댁텞??/span>
+    </p>
     <dl>
-      <dt>M</dt><dd><a href="tel:01041369578">010.4136.9578</a></dd>
-      <dt>F</dt><dd>0504-064-9578</dd>
+      <dt>BRN</dt><dd>852-81-03902</dd>
       <dt>E</dt><dd><a href="mailto:hwshindh@d2harchi.com">hwshindh@d2harchi.com</a></dd>
-      <dt>A</dt><dd>서울 서초 양재동 강남대로 16길 14-2, 301호</dd>
+      <dt>A</dt><dd>?쒖슱?밸퀎???쒖큹援?媛뺣궓?濡?6湲?14-2, 301??(?묒옱??</dd>
     </dl>
-    <p class="copy">© D2H ARCHITECTS</p>
+    <p class="copy">짤 D2H ARCHITECTS INC. ALL RIGHTS RESERVED.</p>
   </section>
 
   <div id="detail" role="dialog" aria-modal="true" aria-label="프로젝트 상세" hidden>
