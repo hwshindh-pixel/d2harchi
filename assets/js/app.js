@@ -82,7 +82,7 @@
 
       archGridEl.innerHTML = filtered
         .map(function (p) {
-          const heroThumb = "assets/thumbs/projects/" + p.folder + ".webp";
+          const heroThumb = "assets/thumbs/projects/" + p.folder + ".webp?v=2";
           const imgCountLabel =
             p.images.length === 1 ? "1 Visual" : p.images.length + " Visuals";
           return (
@@ -140,7 +140,7 @@
   if (energyGridEl) {
     energyGridEl.innerHTML = DATA.energyModules
       .map(function (m) {
-        const thumbImg = "assets/thumbs/energy/" + m.id + ".webp";
+        const thumbImg = "assets/thumbs/energy/" + m.id + ".webp?v=2";
         return (
           '<a class="work-card" href="detail.html?type=energy&id=' +
           encodeURIComponent(m.id) +
@@ -182,7 +182,7 @@
   if (artGridEl) {
     artGridEl.innerHTML = DATA.artWorks
       .map(function (a) {
-        const thumbImg = "assets/thumbs/art/" + a.id + ".webp";
+        const thumbImg = "assets/thumbs/art/" + a.id + ".webp?v=2";
         return (
           '<a class="work-card" href="detail.html?type=art&id=' +
           encodeURIComponent(a.id) +
