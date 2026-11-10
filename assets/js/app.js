@@ -11,60 +11,6 @@
   /* =========================================================
      1. MAIN LANDING PAGE (index.html)
      ========================================================= */
-  const demoTabsEl = document.getElementById("demo-tabs");
-  const demoBodyEl = document.getElementById("demo-body");
-  if (demoTabsEl && demoBodyEl) {
-    let activeDemoIdx = 0;
-
-    function renderDemo(idx) {
-      activeDemoIdx = idx;
-      const d = DATA.saasDemos[idx];
-      demoTabsEl.innerHTML = DATA.saasDemos
-        .map(function (item, i) {
-          return (
-            '<button type="button" class="demo-tab' +
-            (i === idx ? " active" : "") +
-            '" data-demo="' +
-            i +
-            '">' +
-            esc(item.tab) +
-            "</button>"
-          );
-        })
-        .join("");
-
-      demoBodyEl.innerHTML =
-        '<div class="demo-meta">' +
-        "<h4>" +
-        esc(d.title) +
-        "</h4>" +
-        "<p>" +
-        esc(d.desc) +
-        "</p>" +
-        '<div class="demo-kpis">' +
-        d.kpis
-          .map(function (k) {
-            return (
-              '<div class="kpi-box"><div class="v">' +
-              esc(k.v) +
-              '</div><div class="k">' +
-              esc(k.k) +
-              "</div></div>"
-            );
-          })
-          .join("") +
-        "</div></div>" +
-        '<pre class="demo-code"><code>' +
-        esc(d.sample) +
-        "</code></pre>";
-    }
-
-    demoTabsEl.addEventListener("click", function (e) {
-      const btn = e.target.closest("[data-demo]");
-      if (btn) renderDemo(Number(btn.dataset.demo));
-    });
-    renderDemo(0);
-  }
 
   /* Pillar 01: Architecture Design (32 Projects) */
   const archGridEl = document.getElementById("arch-grid");
@@ -136,7 +82,7 @@
 
       archGridEl.innerHTML = filtered
         .map(function (p) {
-          const heroImg = "assets/projects/" + p.folder + "/" + p.images[0].file;
+          const heroThumb = "assets/thumbs/projects/" + p.folder + ".webp";
           const imgCountLabel =
             p.images.length === 1 ? "1 Visual" : p.images.length + " Visuals";
           return (
@@ -145,10 +91,10 @@
             '">' +
             '<div class="work-thumb">' +
             '<img src="' +
-            esc(heroImg) +
+            esc(heroThumb) +
             '" alt="' +
             esc(p.title) +
-            '" loading="lazy">' +
+            '" loading="lazy" decoding="async">' +
             '<span class="work-badge' +
             (p.isWinner ? " winner" : "") +
             '">' +
@@ -194,16 +140,17 @@
   if (energyGridEl) {
     energyGridEl.innerHTML = DATA.energyModules
       .map(function (m) {
+        const thumbImg = "assets/thumbs/energy/" + m.id + ".webp";
         return (
           '<a class="work-card" href="detail.html?type=energy&id=' +
           encodeURIComponent(m.id) +
           '">' +
           '<div class="work-thumb">' +
           '<img src="' +
-          esc(m.image) +
+          esc(thumbImg) +
           '" alt="' +
           esc(m.title) +
-          '" loading="lazy">' +
+          '" loading="lazy" decoding="async">' +
           '<span class="work-badge">' +
           esc(m.solver) +
           "</span>" +
@@ -235,16 +182,17 @@
   if (artGridEl) {
     artGridEl.innerHTML = DATA.artWorks
       .map(function (a) {
+        const thumbImg = "assets/thumbs/art/" + a.id + ".webp";
         return (
           '<a class="work-card" href="detail.html?type=art&id=' +
           encodeURIComponent(a.id) +
           '">' +
           '<div class="work-thumb">' +
           '<img src="' +
-          esc(a.image) +
+          esc(thumbImg) +
           '" alt="' +
           esc(a.title) +
-          '" loading="lazy">' +
+          '" loading="lazy" decoding="async">' +
           '<span class="work-badge">Spatial Light Art</span>' +
           '<span class="work-count">D2H Archi_Lab</span>' +
           "</div>" +
@@ -411,9 +359,11 @@
             esc(g.caption) +
             '" data-zoom="' +
             esc(g.src) +
-            '" loading="' +
-            (gi === 0 ? "eager" : "lazy") +
-            '">' +
+            '" ' +
+            (gi === 0
+              ? 'loading="eager" fetchpriority="high" decoding="async"'
+              : 'loading="lazy" decoding="async"') +
+            ">" +
             '<figcaption class="gallery-cap"><span>' +
             esc(g.caption) +
             '</span><span style="font-family:var(--mono);font-size:.7rem;">PLATE ' +

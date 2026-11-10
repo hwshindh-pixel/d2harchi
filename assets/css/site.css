@@ -149,7 +149,7 @@ a:focus-visible, button:focus-visible {
   background:
     radial-gradient(circle at 78% 28%, rgba(125, 211, 252, 0.12), transparent 52%),
     linear-gradient(105deg, rgba(17, 17, 16, 0.94) 36%, rgba(17, 17, 16, 0.74) 70%, rgba(17, 17, 16, 0.86) 100%),
-    url("../projects/01_pangyo2/01_hero.jpg") center center / cover no-repeat;
+    url("../thumbs/hero.webp") center center / cover no-repeat;
   z-index: 0;
 }
 
