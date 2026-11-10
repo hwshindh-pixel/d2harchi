@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dossier | D2H Archi_Lab</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23111110'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' fill='%237dd3fc' font-family='monospace' font-size='24' font-weight='bold'%3ED2H%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="D2H Archi_Lab — Architecture Design, Environmental AI Simulation, and Spatial Art Dossier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">D2H ARCHI_LAB <span>SPATIAL AI</span></a>
+      <nav class="nav-links" aria-label="Detail Navigation">
+        <a id="detail-back" href="index.html#architecture">← Back to Overview</a>
+        <a id="detail-prev" href="#">Prev</a>
+        <a id="detail-next" href="#">Next</a>
+        <a class="nav-cta" href="pricing.html">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="detail-wrap" id="detail-root"></main>
+
+  <footer class="site-footer" style="border-top:1px solid var(--line);">
+    <div>D2H ARCHITECTS INC. · D2H ARCHI_LAB</div>
+    <div>SEOUL, REPUBLIC OF KOREA · <a href="mailto:hgshindh@d2harchi.com">hgshindh@d2harchi.com</a></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Full Resolution Plate" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button">ESC / CLOSE</button>
+    <img id="lightbox-img" src="" alt="Expanded architectural plate">
+  </div>
+
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
