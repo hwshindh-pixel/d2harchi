@@ -225,16 +225,16 @@
     const id = params.get("id");
 
     let list = DATA.projects;
-    let backAnchor = "index.html#architecture";
+    let backAnchor = "architecture.html";
     let pillarLabel = "Pillar 01 / Architecture Design";
 
     if (type === "energy") {
       list = DATA.energyModules;
-      backAnchor = "index.html#environmental-ai";
+      backAnchor = "environmental-ai.html";
       pillarLabel = "Pillar 02 / Environmental AI";
     } else if (type === "art") {
       list = DATA.artWorks;
-      backAnchor = "index.html#spatial-art";
+      backAnchor = "spatial-art.html";
       pillarLabel = "Pillar 03 / Spatial Art";
     }
 

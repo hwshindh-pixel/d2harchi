@@ -10,19 +10,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="assets/thumbs/hero.webp?v=2" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/site.css?v=4">
+  <link rel="stylesheet" href="assets/css/site.css?v=5">
 </head>
 <body>
   <!-- Sticky Header -->
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="#top">D2H ARCHI_LAB <span>AI + BPS R&amp;D</span></a>
+      <a class="brand" href="index.html">D2H ARCHI_LAB <span>AI + BPS R&amp;D</span></a>
       <nav class="nav-links" aria-label="Primary Navigation">
-        <a href="#vision">What We Are Building</a>
+        <a href="software.html">Software &amp; AI</a>
         <a href="pricing.html">Pricing</a>
-        <a href="#architecture">Architecture (32)</a>
-        <a href="#environmental-ai">Environmental AI (9)</a>
-        <a href="#spatial-art">Spatial Art (8)</a>
+        <a href="architecture.html">Architecture (32)</a>
+        <a href="environmental-ai.html">Environmental AI (9)</a>
+        <a href="spatial-art.html">Spatial Art (8)</a>
         <a href="#company">Team &amp; Entity</a>
         <a class="nav-cta" href="mailto:hgshindh@d2harchi.com?subject=D2H%20Archi_Lab%20Early%20Access">Join Beta Waitlist</a>
       </nav>
@@ -39,8 +39,8 @@
           <strong>D2H Archi_Lab</strong> is the software and AI product division of <strong>D2H Architects Inc.</strong> We combine our leadership team's proven track record across <strong>32 landmark architectural projects</strong> and <strong>environmental physics simulations</strong> with new cloud software tools we are building on <strong>Google Cloud &amp; Gemini</strong>.
         </p>
         <div class="hero-actions">
-          <a class="btn-primary" href="#vision">What We Are Building →</a>
-          <a class="btn-secondary" href="#architecture">What We Have Done (32 Works)</a>
+          <a class="btn-primary" href="#pillars">Explore 4 Core Pillars →</a>
+          <a class="btn-secondary" href="software.html">Software Roadmap</a>
           <a class="btn-secondary" href="pricing.html">Planned Pricing</a>
         </div>
         <div class="hero-metrics">
@@ -65,50 +65,201 @@
           <span class="status-dot" style="color:var(--accent-amber);">EARLY-STAGE</span>
         </div>
         <div class="stack-list">
-          <div class="stack-item">
+          <a class="stack-item" href="software.html">
             <div class="stack-item-top">
-              <span>01 · What We Are Building (Software R&amp;D)</span>
+              <span>01 · Software &amp; AI R&amp;D</span>
               <code>IN DEVELOPMENT</code>
             </div>
             <p>Cloud SaaS tools automating building code pre-checks (Gemini RAG) and EnergyPlus, Radiance &amp; OpenFOAM simulations.</p>
-          </div>
-          <div class="stack-item">
+          </a>
+          <a class="stack-item" href="architecture.html">
             <div class="stack-item-top">
-              <span>02 · Architectural Track Record</span>
+              <span>02 · Architecture Design</span>
               <code>32 WORKS</code>
             </div>
             <p>Competition-winning rail stations, corporate R&amp;D campuses, and public facilities led by Founder Dong Hyun Shin.</p>
-          </div>
-          <div class="stack-item">
+          </a>
+          <a class="stack-item" href="environmental-ai.html">
             <div class="stack-item-top">
-              <span>03 · Environmental Physics Expertise</span>
+              <span>03 · Environmental AI</span>
               <code>9 WORKFLOWS</code>
             </div>
             <p>Solar radiation, daylight VSC, facade shading, and indoor/outdoor CFD studies conducted by our engineering team.</p>
-          </div>
-          <div class="stack-item">
+          </a>
+          <a class="stack-item" href="spatial-art.html">
             <div class="stack-item-top">
-              <span>04 · Spatial &amp; Light Art Research</span>
+              <span>04 · Spatial Art</span>
               <code>8 INSTALLATIONS</code>
             </div>
             <p>Chromatic daylight and architectural threshold installations by Yeojoo Park (MFA, Slade School of Fine Art, UCL).</p>
-          </div>
+          </a>
         </div>
       </aside>
     </div>
   </section>
 
-  <!-- Part I: What We Are Building (Product Roadmap) -->
+  <!-- PART I: 4 Large Category Gateway Cards -->
+  <section class="section" id="pillars">
+    <div class="sec-kicker">PART I · FOUR CORE DIVISIONS &amp; WORKSPACES</div>
+    <div class="sec-header">
+      <div>
+        <h2 class="sec-title">Explore What We Build &amp; What We Have Built</h2>
+        <p class="sec-desc">
+          Select a division below to inspect our cloud software roadmap on Google Cloud &amp; Gemini, our 32 architectural design works, our environmental physics simulations, or our spatial light art installations.
+        </p>
+      </div>
+    </div>
+
+    <div class="pillar-grid">
+      <!-- Category 01: Software & AI R&D -->
+      <a class="pillar-card" href="software.html">
+        <div class="pillar-thumb">
+          <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="D2H Archi_Lab Cloud Software & AI Architecture Diagram">
+            <defs>
+              <pattern id="bpGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+                <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(125,211,252,0.08)" stroke-width="1"/>
+              </pattern>
+              <linearGradient id="cardBg01" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#14181c"/>
+                <stop offset="100%" stop-color="#0d0d0c"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="450" fill="url(#cardBg01)"/>
+            <rect width="800" height="450" fill="url(#bpGrid)"/>
+            <circle cx="650" cy="80" r="190" fill="rgba(125,211,252,0.06)"/>
+            <text x="48" y="54" fill="#7dd3fc" font-family="monospace" font-size="14" letter-spacing="3">GOOGLE CLOUD &amp; GEMINI · SYSTEM ARCHITECTURE</text>
+            <rect x="48" y="88" width="218" height="236" rx="6" fill="#181b1e" stroke="rgba(252,211,77,0.45)" stroke-width="1.5"/>
+            <text x="66" y="120" fill="#fcd34d" font-family="monospace" font-size="12" letter-spacing="1.5">MODULE 01 · MVP</text>
+            <text x="66" y="152" fill="#fafaf7" font-family="sans-serif" font-size="22" font-weight="600">CodeAudit AI</text>
+            <text x="66" y="182" fill="#949188" font-family="sans-serif" font-size="13">Vertex AI / Gemini RAG</text>
+            <line x1="66" y1="204" x2="246" y2="204" stroke="rgba(250,250,247,0.12)"/>
+            <text x="66" y="232" fill="#cbd5e1" font-family="monospace" font-size="12">&gt; Building Act Indexing</text>
+            <text x="66" y="256" fill="#cbd5e1" font-family="monospace" font-size="12">&gt; FAR / BCR Envelope</text>
+            <text x="66" y="280" fill="#6ee7b7" font-family="monospace" font-size="12">&gt; Status: In Dev</text>
+            <rect x="291" y="88" width="218" height="236" rx="6" fill="#181b1e" stroke="rgba(125,211,252,0.4)" stroke-width="1.5"/>
+            <text x="309" y="120" fill="#7dd3fc" font-family="monospace" font-size="12" letter-spacing="1.5">MODULE 02 · R&amp;D</text>
+            <text x="309" y="152" fill="#fafaf7" font-family="sans-serif" font-size="22" font-weight="600">ThermoFlux</text>
+            <text x="309" y="182" fill="#949188" font-family="sans-serif" font-size="13">Cloud Run + Cloud Batch</text>
+            <line x1="309" y1="204" x2="489" y2="204" stroke="rgba(250,250,247,0.12)"/>
+            <text x="309" y="232" fill="#cbd5e1" font-family="monospace" font-size="12">&gt; DOE EnergyPlus</text>
+            <text x="309" y="256" fill="#cbd5e1" font-family="monospace" font-size="12">&gt; Radiance / FluxDL</text>
+            <text x="309" y="280" fill="#7dd3fc" font-family="monospace" font-size="12">&gt; OpenFOAM Wind CFD</text>
+            <rect x="534" y="88" width="218" height="236" rx="6" fill="#181b1e" stroke="rgba(110,231,183,0.38)" stroke-width="1.5"/>
+            <text x="552" y="120" fill="#6ee7b7" font-family="monospace" font-size="12" letter-spacing="1.5">MODULE 03 · PLAN</text>
+            <text x="552" y="152" fill="#fafaf7" font-family="sans-serif" font-size="22" font-weight="600">SpatialGen</text>
+            <text x="552" y="182" fill="#949188" font-family="sans-serif" font-size="13">Multimodal Diagram AI</text>
+            <line x1="552" y1="204" x2="732" y2="204" stroke="rgba(250,250,247,0.12)"/>
+            <text x="552" y="232" fill="#cbd5e1" font-family="monospace" font-size="12">&gt; Sketch to Massing</text>
+            <text x="552" y="256" fill="#cbd5e1" font-family="monospace" font-size="12">&gt; Open CAD / IFC Export</text>
+            <text x="552" y="280" fill="#cbd5e1" font-family="monospace" font-size="12">&gt; Program Area Tables</text>
+            <path d="M 266 206 L 291 206 M 509 206 L 534 206" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="4 3"/>
+            <rect x="48" y="346" width="704" height="58" rx="4" fill="rgba(250,250,247,0.03)" stroke="rgba(250,250,247,0.14)"/>
+            <text x="72" y="380" fill="#d5d3cc" font-family="monospace" font-size="13">INFRASTRUCTURE: Vertex AI · Gemini API · Cloud Run · Cloud Batch · BigQuery · SaaS Model</text>
+          </svg>
+        </div>
+        <div class="pillar-body">
+          <div>
+            <div class="pillar-kicker">
+              <span style="color:var(--accent-amber);">01 · PRODUCT DEVELOPMENT</span>
+              <span class="sub-tag">Google Cloud &amp; Gemini</span>
+            </div>
+            <h3 class="pillar-title">Software &amp; AI R&amp;D</h3>
+            <p class="pillar-desc">
+              Explore the three cloud SaaS products we are actively building—CodeAudit AI, ThermoFlux BPS Cloud, and SpatialGen Studio—along with our Google Cloud architecture and roadmap.
+            </p>
+          </div>
+          <div class="pillar-foot">
+            <span>Open Software &amp; AI Division</span>
+            <span>→</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Category 02: Architecture Design -->
+      <a class="pillar-card" href="architecture.html">
+        <div class="pillar-thumb">
+          <img src="assets/thumbs/projects/01_pangyo2.webp?v=2" alt="Pangyo 2nd Techno Valley — Architecture Design Pillar" loading="eager" decoding="async">
+        </div>
+        <div class="pillar-body">
+          <div>
+            <div class="pillar-kicker">
+              <span>02 · ARCHITECTURAL TRACK RECORD</span>
+              <span class="sub-tag">32 Landmark Projects</span>
+            </div>
+            <h3 class="pillar-title">Architecture Design</h3>
+            <p class="pillar-desc">
+              28 years of national rail stations, corporate R&amp;D campuses, public civic landmarks, and industrial complexes (1998–2026) that inform every rule inside our software.
+            </p>
+          </div>
+          <div class="pillar-foot">
+            <span>Browse All 32 Works</span>
+            <span>→</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Category 03: Environmental AI -->
+      <a class="pillar-card" href="environmental-ai.html">
+        <div class="pillar-thumb">
+          <img src="assets/thumbs/energy/outdoor_cfd_pressure.webp?v=2" alt="3D Urban Wind Pressure & Building Physics Simulation" loading="lazy" decoding="async">
+        </div>
+        <div class="pillar-body">
+          <div>
+            <div class="pillar-kicker">
+              <span>03 · BUILDING PHYSICS &amp; CFD</span>
+              <span class="sub-tag">9 Simulation Studies</span>
+            </div>
+            <h3 class="pillar-title">Environmental AI</h3>
+            <p class="pillar-desc">
+              Real-world solar irradiance heatmaps, hourly EnergyPlus cooling loads, Radiance daylight VSC grids, and OpenFOAM wind studies backing ThermoFlux BPS Cloud.
+            </p>
+          </div>
+          <div class="pillar-foot">
+            <span>Inspect 9 Simulation Workflows</span>
+            <span>→</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Category 04: Spatial Art -->
+      <a class="pillar-card" href="spatial-art.html">
+        <div class="pillar-thumb">
+          <img src="assets/thumbs/art/triumphal_gate_v.webp?v=2" alt="Triumphal Gate V — Spatial Light Art by Yeojoo Park" loading="lazy" decoding="async">
+        </div>
+        <div class="pillar-body">
+          <div>
+            <div class="pillar-kicker">
+              <span>04 · LIGHT &amp; PERCEPTION RESEARCH</span>
+              <span class="sub-tag">8 Installations</span>
+            </div>
+            <h3 class="pillar-title">Spatial Art</h3>
+            <p class="pillar-desc">
+              Monumental daylight optics, chromatic threshold portals, and atmospheric placemaking works by Yeojoo Park (MFA, Slade School of Fine Art, UCL), curated at D2H Archi_Lab.
+            </p>
+          </div>
+          <div class="pillar-foot">
+            <span>View 8 Spatial Installations</span>
+            <span>→</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- PART II: Product Summary on Homepage (For Quick SaaS Review & Access) -->
   <section class="section" id="vision">
-    <div class="sec-kicker">PART I · WHAT WE ARE BUILDING (PRODUCT ROADMAP)</div>
+    <div class="sec-kicker">PART II · WHAT WE ARE BUILDING (CLOUD SAAS SUMMARY)</div>
     <div class="sec-header">
       <div>
         <h2 class="sec-title">Three Cloud Software Products in Development</h2>
         <p class="sec-desc">
-          Rather than operating solely as a traditional architectural design firm, D2H Archi_Lab is turning real architectural and environmental engineering workflows into accessible cloud software on Google Cloud &amp; Gemini.
+          Unlike traditional billable-hour architectural studios, D2H Archi_Lab is packaging real architectural code audits and environmental simulation workflows into repeatable SaaS products on Google Cloud &amp; Gemini.
         </p>
       </div>
-      <a class="btn-secondary" href="pricing.html">View Planned Pricing &amp; Business Model →</a>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a class="btn-secondary" href="software.html">Full Software Architecture →</a>
+        <a class="btn-primary" href="pricing.html">View Planned Pricing →</a>
+      </div>
     </div>
 
     <div class="saas-grid" style="margin-bottom:0;">
@@ -118,7 +269,7 @@
           <h3>CodeAudit AI</h3>
           <div class="saas-sub">Building Code &amp; Zoning Pre-Check Assistant</div>
           <p>
-            We are building an AI regulatory pre-check tool powered by Google Vertex AI &amp; Gemini that structures Korea's Building Act and municipal ordinances—helping architects verify allowable FAR/BCR, setback envelopes, and permit risks early in feasibility studies.
+            Powered by Google Vertex AI &amp; Gemini: structures Korea's Building Act and municipal ordinances so architects can verify allowable FAR/BCR, setback limits, and permit bottlenecks early.
           </p>
         </div>
         <div class="tag-row">
@@ -134,7 +285,7 @@
           <h3>ThermoFlux BPS Cloud</h3>
           <div class="saas-sub">Cloud Wrapper for EnergyPlus, Radiance &amp; CFD</div>
           <p>
-            We are developing an automated cloud pipeline on Google Cloud Run &amp; Batch so designers can run open-source DOE EnergyPlus thermal loads, Radiance/FluxDL daylighting, and OpenFOAM wind studies without expensive local workstations.
+            Serverless execution on Google Cloud Run &amp; Batch running DOE EnergyPlus thermal loads, Radiance/FluxDL daylighting, and OpenFOAM wind studies without expensive workstations.
           </p>
         </div>
         <div class="tag-row">
@@ -150,7 +301,7 @@
           <h3>SpatialGen Studio</h3>
           <div class="saas-sub">Diagram-to-Massing &amp; Area Schedule Assistant</div>
           <p>
-            Planned studio tool designed to connect early spatial diagrams and program tables with structured 3D massing schemas (open-source CAD/BIM interoperability) and automated floor-area schedules.
+            Planned multimodal studio tool bridging early concept sketches and program tables with structured 3D massing schemas (open-source CAD/BIM interoperability) and area tables.
           </p>
         </div>
         <div class="tag-row">
@@ -162,53 +313,7 @@
     </div>
   </section>
 
-  <!-- Part II-A: What We Have Done — Pillar 01: Architecture Design (32 Projects) -->
-  <section class="section" id="architecture">
-    <div class="sec-kicker">PART II · WHAT WE HAVE DONE — PILLAR 01 · ARCHITECTURE DESIGN</div>
-    <div class="sec-header">
-      <div>
-        <h2 class="sec-title">32 Landmark, R&amp;D &amp; Infrastructure Works</h2>
-        <p class="sec-desc">
-          Grounded in Founder &amp; CEO Dong Hyun Shin's 28-year architectural leadership (1998–2026) across national rail transit hubs, corporate R&amp;D campuses, and competition-winning public landmarks. Click any card to inspect the full multi-plate dossier.
-        </p>
-      </div>
-    </div>
-
-    <div class="filter-bar" id="arch-filters" role="tablist" aria-label="Architecture Category Filter"></div>
-    <div class="cards-grid" id="arch-grid"></div>
-  </section>
-
-  <!-- Part II-B: What We Have Done — Pillar 02: Environmental AI (9 Simulation Studies) -->
-  <section class="section" id="environmental-ai">
-    <div class="sec-kicker">PART II · WHAT WE HAVE DONE — PILLAR 02 · ENVIRONMENTAL AI</div>
-    <div class="sec-header">
-      <div>
-        <h2 class="sec-title">9 Physics &amp; CFD Simulation Workflows</h2>
-        <p class="sec-desc">
-          Representative building performance simulation studies conducted by our engineering team using DOE EnergyPlus, Radiance/FluxDL, and OpenFOAM—forming the core analytical workflows we are automating into ThermoFlux BPS Cloud.
-        </p>
-      </div>
-    </div>
-
-    <div class="cards-grid" id="energy-grid"></div>
-  </section>
-
-  <!-- Part II-C: What We Have Done — Pillar 03: Spatial Art (8 Works) -->
-  <section class="section" id="spatial-art">
-    <div class="sec-kicker">PART II · WHAT WE HAVE DONE — PILLAR 03 · SPATIAL ART</div>
-    <div class="sec-header">
-      <div>
-        <h2 class="sec-title">8 Architectural Light &amp; Spatial Installations</h2>
-        <p class="sec-desc">
-          Spatial light and chromatic perception works by acclaimed artist Yeojoo Park (MFA, Slade School of Fine Art, UCL), curated within D2H Archi_Lab to explore daylight optics, threshold geometry, and public placemaking.
-        </p>
-      </div>
-    </div>
-
-    <div class="cards-grid" id="art-grid"></div>
-  </section>
-
-  <!-- Part III: Founding Team & Corporate Registry -->
+  <!-- PART III: Founding Team & Corporate Registry -->
   <section class="section" id="company" style="border-bottom:0;">
     <div class="sec-kicker">PART III · LEADERSHIP &amp; CORPORATE REGISTRY</div>
     <div class="sec-header">
@@ -270,10 +375,7 @@
 
   <footer class="site-footer">
     <div>© 2026 D2H ARCHITECTS INC. · D2H ARCHI_LAB. ALL RIGHTS RESERVED.</div>
-    <div><a href="pricing.html">Planned Pricing &amp; Business Model</a> · <a href="mailto:hgshindh@d2harchi.com">hgshindh@d2harchi.com</a></div>
+    <div><a href="software.html">Software &amp; AI</a> · <a href="pricing.html">Planned Pricing</a> · <a href="mailto:hgshindh@d2harchi.com">hgshindh@d2harchi.com</a></div>
   </footer>
-
-  <script src="assets/js/catalog.js"></script>
-  <script src="assets/js/app.js?v=3"></script>
 </body>
 </html>
